@@ -1,7 +1,6 @@
 using System;
 
 namespace Backend.Services;
-
 public class RandomService : IRandomService
 {
     private readonly int _value;
@@ -15,3 +14,5 @@ public class RandomService : IRandomService
         _value = new Random().Next(1000);
     }
 }
+
+

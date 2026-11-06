@@ -4,3 +4,48 @@ GET {{Backend_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+GET {{Backend_HostAddress}}/api/Brand
+Accept: application/json
+
+###
+
+GET {{Backend_HostAddress}}/api/Brand/1
+Accept: application/json
+
+###
+
+GET {{Backend_HostAddress}}/api/Brand/1/beers
+Accept: application/json
+
+###
+
+POST {{Backend_HostAddress}}/api/Brand
+Content-Type: application/json
+
+{
+  "name": "Acme"
+}
+
+###
+
+POST {{Backend_HostAddress}}/api/Brand
+Content-Type: application/json
+
+{
+  "name": ""
+}
+
+###
+
+PUT {{Backend_HostAddress}}/api/Brand/9999
+Content-Type: application/json
+
+{
+  "name": "Marca inexistente"
+}
+
+###
+
+DELETE {{Backend_HostAddress}}/api/Brand/9999
+Accept: application/json
